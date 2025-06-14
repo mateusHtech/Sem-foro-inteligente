@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="stylesheet" href="Estilo_semaforo.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE SEMÁFORO</title>
+</head>
+<body>
+ <div id="user-form">
+  <label for="username">Digite seu nome:</label>
+  <input type="text" id="username" placeholder="Seu nome">
+  <button id="confirm-button">Confirmar</button>
+</div>
+
+<div id="simulator" style="display: none;">
+    <h1>Semáforo inteligente</h1>
+    <p>Seja bem vindo! voce está no simulador de semáforo inteligente, pressione o botão "atravessar" para o sinal ficar verde.</p>
+    <div class="container">
+
+    <div class="estrada"> 
+        <div id="carro"><img src="img/simple-red-car-illustration-png.png" alt="carro" height="100px"></div>
+    </div>
+
+    <div id="semaforo">
+        <h2>Semáforo</h2>
+    
+    <div class="luz vermelho">
+        <h2>Pare</h2>
+       
+        
+    </div>
+    <div class="luz amarelo">
+        <h2>Olhe</h2>
+
+    </div>
+    <div class="luz verde">
+        <h2>Siga</h2>
+   
+    </div>
+    </div>
+    
+    <div class="botao">
+    <button id="atravessar">Atravessar</button>
+    </div>
+
+    </div>
+
+        <div id="status">
+            <h2>Status:</h2>
+            <H3 id="status-text">Aguardando...</H3>
+        </div>
+        <div id="contador">
+        <h2>Contador:</h2>
+        
+    </div>
+
+  
+    </div>
+    
+</div>
+
+</body>
+<script src="script_semaforo.js"></script>
+</html>
