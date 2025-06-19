@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link rel="stylesheet" href="Estilo_semaforo.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATIVIDADE SEMÁFORO</title>
+    <title>Atividade Semáforo</title>
+    <link rel="stylesheet" href="Estilo_semaforo.css">
 </head>
 <body>
- <div id="user-form">
-  <label for="username">Digite seu nome:</label>
-  <input type="text" id="username" placeholder="Seu nome">
-  <button id="confirm-button">Confirmar</button>
-</div>
 
-<div id="simulator" style="display: none;">
-    <h1>Semáforo inteligente</h1>
-    <p>Seja bem vindo! voce está no simulador de semáforo inteligente, pressione o botão "atravessar" para o sinal ficar verde.</p>
-    <div class="container">
+    <header>
+        <h1>Simulador de Semáforo Inteligente</h1>
+    </header>
 
-    <div class="estrada"> 
-        <div id="carro"><img src="img/simple-red-car-illustration-png.png" alt="carro" height="100px"></div>
-    </div>
+    <main>
 
-    <div id="semaforo">
-        <h2>Semáforo</h2>
-    
-    <div class="luz vermelho">
-        <h2>Pare</h2>
-       
-        
-    </div>
-    <div class="luz amarelo">
-        <h2>Olhe</h2>
+        <!-- Formulário do usuário -->
+        <section id="usuario">
+            <label for="username">Digite seu nome:</label>
+            <input type="text" id="username" placeholder="Seu nome">
+            <button id="confirm-button">Confirmar</button>
+        </section>
 
-    </div>
-    <div class="luz verde">
-        <h2>Siga</h2>
-   
-    </div>
-    </div>
-    
-    <div class="botao">
-    <button id="atravessar">Atravessar</button>
-    </div>
+        <!-- Conteúdo principal do simulador -->
+        <section id="simulador" style="display: none;">
+            <p>Seja bem-vindo! Você está no simulador de semáforo inteligente. Pressione o botão "Atravessar" para Solicitar a travessia.</p>
+            
+            <div class="container">
 
-    </div>
+                <!-- Estrada e carro -->
+                <div class="estrada"> 
+                    <div id="carro"><img src="img/simple-red-car-illustration-png.png" alt="carro" height="100px"></div>
+                </div>
 
-        <div id="status">
-            <h2>Status:</h2>
-            <H3 id="status-text">Aguardando...</H3>
-        </div>
-        <div id="contador">
-        <h2>Contador:</h2>
-        
-    </div>
+                <!-- Semáforo -->
+                <section id="semaforo" aria-label="Semáforo">
+                    <h3>Semáforo</h3>
 
-  
-    </div>
-    
-</div>
+                        <div class="luz vermelho"></div>
+                        <div class="luz amarelo"></div>
+                        <div class="luz verde"></div>
+                    </div>
 
+                <!-- Botão de atravessar -->
+                <div class="botao">
+                    <button id="atravessar">Atravessar</button>
+                </div>
+            </div>
+
+            <!-- Status e contador -->
+            <section id="status">
+                <h2>Status:</h2>
+                <p id="status-text">Aguardando...</p>
+            </section>
+
+            <section id="contador">
+                <h2>Contador:</h2>
+                <p id="contador-tempo">---</p>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Projeto Semáforo Inteligente</p>
+    </footer>
+
+    <script src="script_semaforo.js"></script>
 </body>
-<script src="script_semaforo.js"></script>
 </html>
