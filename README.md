@@ -1,5 +1,6 @@
 # Sem-foro-inteligente
 Atividade do curso programação fullstack intermediario, consiste em criar um semáforo inteligente utilizando html, css e js
 
+Deixei comentado algumas instruções no codigo quanto as variaveis para o controle dos semaforos e dos status também
 
-OBS: infelizmente não consegui aprimorar como queria, não consegui aplicar direito o JS, e tive dificuldades, passei horas tentando, mas saiu apenas esse resultado, e no fim quando subi para o repositório, acabei subindo pra Master e não pra Main, caso não apareça é porque precisa selecionar a master
+OBS: Acabei subindo alguns sons que não consegui aplicar, o projeto está funcional, tive apenas um problema quanto a inicio da execução, mas a partir do segundo loop ele está normal
